@@ -1,0 +1,9 @@
+import = [
+    "~/.config/alacritty/colours/tokyo-night.toml"
+]
+live_config_reload = true
+
+[font]
+normal = { family = "Fira Code", style = "Regular" }
+size = 14
+
