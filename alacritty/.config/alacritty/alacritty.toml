@@ -9,4 +9,7 @@ size = 14
 
 [shell]
 program = "/bin/zsh"
-args = ["--login", "-c", "tmux a -t main || tmux new -s main"]
+args = ["--login", "-c", "tmux a -t tmux|| tmux new -s tmux"]
+
+[env]
+TERM = "xterm-256color"
