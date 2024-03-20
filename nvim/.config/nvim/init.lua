@@ -1,2 +1,1 @@
 require("carabine")
-print('hello')
