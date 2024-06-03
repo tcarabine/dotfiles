@@ -5,7 +5,7 @@ live_config_reload = true
 
 [font]
 normal = { family = "FiraCode Nerd Font", style = "Regular" }
-size = 14
+size = 16
 
 [shell]
 program = "/bin/zsh"
