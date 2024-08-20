@@ -1,4 +1,5 @@
-autoload -Uz compinit
+autoload bashcompinit && bashcompinit
+autoload -Uz compinit && compinit
 if [[ -n $HOME/.cache/zsh/zcompdump-$ZSH_VERSION(#qN.mh+24) ]]; then
 compinit -d "$HOME/.cache/zsh/zcompdump-$ZSH_VERSION"
 else
@@ -18,3 +19,9 @@ if [ -f '/Users/tom.carabine/google-cloud-sdk/completion.zsh.inc' ]; then . '/Us
 
 export FUNCTIONS_CORE_TOOLS_TELEMETRY_OPTOUT=1
 eval "$(/Users/tom.carabine/.local/bin/mise activate zsh)"
+
+# Add in auto suggestions
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Add in aws completion
+complete -C '/usr/local/bin/aws_completer' aws
