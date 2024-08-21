@@ -18,7 +18,8 @@ if [ -f '/Users/tom.carabine/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/to
 if [ -f '/Users/tom.carabine/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/tom.carabine/google-cloud-sdk/completion.zsh.inc'; fi
 
 export FUNCTIONS_CORE_TOOLS_TELEMETRY_OPTOUT=1
-eval "$(/Users/tom.carabine/.local/bin/mise activate zsh)"
+eval "$($HOME/.local/bin/mise activate zsh)"
+<<<<<<< Updated upstream
 
 # Add in auto suggestions
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
